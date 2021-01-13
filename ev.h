@@ -246,7 +246,7 @@ enum {
 
 /* can be used to add custom fields to all watchers, while losing binary compatibility */
 #ifndef EV_COMMON
-# define EV_COMMON void *data;
+# define EV_COMMON void *data; unsigned long long u64;
 #endif
 
 #ifndef EV_CB_DECLARE
